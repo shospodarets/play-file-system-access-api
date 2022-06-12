@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <script type="module" src="js/main.mjs"></script>
+</head>
+<body>
+<div class="container">
+    <h1>
+        <a href="https://caniuse.com/native-filesystem-api">File System Access</a> demo
+    </h1>
+    <hr>
+    <h2>
+        Open/edit/safe file
+    </h2>
+    <div>
+        <label>
+            Open file into the file content:
+            <button type="button" class="btn pick-file">
+                Open file
+            </button>
+        </label>
+    </div>
+    <div>
+        <label>
+            File content:
+            <textarea class="file-content"></textarea>
+        </label>
+    </div>
+    <div>
+        <label>
+            Save file content:
+            <button type="button" class="btn btn-primary save-file">
+                Save file
+            </button>
+        </label>
+    </div>
+
+    <hr>
+
+    <h2>
+        Select a directory and remove file/folder in it
+    </h2>
+    <div>
+        <label>
+            Select a directory:
+            <button type="button" class="btn btn-inverse read-dir">
+                Select a directory to work with
+            </button>
+        </label>
+    </div>
+    <div>
+        <label>
+            Delete a file in a selected directory:
+            <input type="text" class="delete-file-name"/>
+        </label>
+        <label>
+            <button type="button" class="btn btn-warning delete-file">
+                Delete the file
+            </button>
+        </label>
+    </div>
+    <div>
+        <label>
+            Delete a folder in a selected directory:
+            <input type="text" class="delete-folder-name"/>
+        </label>
+        <label>
+            <button type="button" class="btn btn-warning delete-folder">
+                Delete the folder
+            </button>
+        </label>
+    </div>
+</div>
+</body>
+</html>
